@@ -24,8 +24,9 @@
 
 
 body{
+  font-family: Arial, sans-serif;
   margin:0;
-  background-image: url("../Game-of-code-CTF/image/home3.jpeg");
+  background-image: url("../Game-of-code-CTF/image/backgroundspace.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -34,52 +35,45 @@ body{
 
 
 .material-symbols-outlined {
-  font-size: 1000px; /* Adjust font size if needed */
+  font-size: 1200px; 
 }
-
-.settings {
- 
-  color:var(--primary-color-1);
+.play-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  background-color: #294f917a;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 40px auto;
   position: absolute;
-  top: 280px; /* Adjust top position */
-  right: 400px; /* Adjust right position */
-}
-.info {
-  color:var(--primary-color-1);
-  position: absolute;
-  top: 370px; /* Adjust top position */
-  left: 250px; /* Adjust left position */
-}
-.rocket {
-  color:var(--primary-color-1);
-  position: absolute;
-  top: 190px; /* Adjust top position */
-  left: 630px; /* Adjust left position */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.settings,
-.rocket,
-.info {
-  transform: scale(5); 
+.play-box:hover {
+  background-color: #1f0a8854;
 }
 
-.material-symbols-outlined:hover {
-  color: var(--primary-color-2); 
-  
+.play-text {
+  font-size: 24px;
+  margin-left: 10px;
+  color: #fff;
 }
 
-.settings:hover,
-.rocket:hover,
-.info:hover {
-  transform: translateY(-10px) scale(5); 
+.material-symbols-outlined.play {
+  font-size: 48px;
+  color: #fff;
 }
-
 
 footer {
   position: absolute;
   bottom: 0;
   padding: 0;
-  background-color:var(--primary-color-1);
+  color:#ffffff;
   height: 40px;
   width: 100%;
   text-align: center;
@@ -89,20 +83,16 @@ h1 {
   text-align: center; 
   font-size: 130px; 
   position: absolute;
-  top:-40px;
+  top:30px;
   left: 50%;
     transform: translate(-50%, -50%); 
+    color: #66CCCC;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   
 }
 
-@keyframes color-change {
-  0% { color:var(--primary-color-1) }
-  50% { color: var(--primary-color-2) }
-  100% { color: var(--secondary-color-1) }
-}
 
-h1 {
-  animation: color-change 3s ease-in-out infinite alternate; 
-}
+
+
 
 

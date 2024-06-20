@@ -1,6 +1,6 @@
 #intro {
-  /* Text properties */
-  color: navy;
+  
+  color: #66CCCC;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   vertical-align: middle;
@@ -9,7 +9,7 @@
   font-size: 1.5em;
   font-weight: bold;
   letter-spacing: 0.05em;
-  background-color: rgba(255, 255, 255, 0.8);
+ 
   border: 2px solid #2949a8;
   border-radius: 10px;
   padding: 10px;
@@ -21,23 +21,24 @@
 /* Hover effect */
 #intro:hover {
   color: white;
-  background-color: #2949a8;
+  background-color: #2949a8c1;
 }
 body{
-    background-image: url("image/introback.jpeg");
+    background-image: url(../Game-of-code-CTF/image/backgroundspace.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
   #description {
-
+    color:#9da5bd;
     font-family: "Playwrite NZ", cursive;
     font-weight: 500;
+    background-color:rgba(225,225,225,0.1);
     padding: 20px; 
-    border: 5px solid #ddd; 
+    border: 2px solid rgba(225,225,225,0.3); 
     border-radius: 10px; 
-    background-color: #f5f5f5; 
+    
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
    
     line-height: 1.5; 
@@ -106,7 +107,8 @@ body{
   }
 
   pre {
-    background-color: #f7f7f7;
+    color:#ccc;
+    background-color: #000000;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -115,12 +117,14 @@ body{
 
   
   li {
+    color: #f0f0f0;
     list-style: none;
     padding: 20px;
     border-bottom: 1px solid #ccc;
-    background-color: #f9f9f9;
+    background-color:rgba(225,225,225,0.1);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(225,225,225,0.3); 
+    
   }
 
   li:last-child {
@@ -130,7 +134,7 @@ body{
   ul {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    color: #333;
+    color: #f0f0f0;
     margin: 0;
     padding: 0;
   }
@@ -142,14 +146,7 @@ body{
     margin-right: 20px;
   }
 
-  li:hover {
-    background-color:  #9da5bd;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  }
-
-  li:hover ul:before {
-    color: #004965;
-  }
+ 
 
   #next-page-btn {
     background-color:#9da5bd;
