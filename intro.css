@@ -22,6 +22,8 @@ body{
    
     line-height: 1.5; 
   }
+
+
   #ques1 {
     font-family: "Ubuntu", sans-serif;
     text-decoration: underline 2px; 
@@ -89,4 +91,64 @@ body{
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: auto;
+  }
+
+  
+  li {
+    list-style: none;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+
+  ul {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul:before {
+    content: "›";
+    font-size: 20px;
+    color: #00698f;
+    margin-right: 20px;
+  }
+
+  li:hover {
+    background-color:  #9da5bd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  li:hover ul:before {
+    color: #004965;
+  }
+
+  #next-page-btn {
+    background-color:#9da5bd;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+  bottom: 20px;
+  right: 20px;
+    
+  }
+  
+  #next-page-btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  #next-page-btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
