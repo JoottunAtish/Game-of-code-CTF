@@ -114,3 +114,14 @@ button{
 .opt > button{
     margin: 0.5rem;
 }
+
+
+.bad.active{
+  background-color: #2bac1f;
+
+}
+
+.bad.active{
+  background-color: #bc1818;
+
+}
