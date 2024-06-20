@@ -1,48 +1,6 @@
-body {
-    margin: 0;
-}
 
-.background-container {
-    background-image: url("../image/home3.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
-    margin-top: 0px;
-}
-
-
-a {
-    float: left;
-    position: relative;
-}
-
-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#launch img {
-    top: 350px;
-    left: 770px;
-}
-
-#setting img {
-    top: 550px;
-    left: 400px;
-}
-
-#help img {
-    top: 550px;
-    left: 1200px;
-}
-
-a:hover {
-    transform: translateY(-5px);
-    
-  }
   
+
 :root {
     --primary-color-1: #ffffff;
     --primary-color-2: #9da5bd;
@@ -50,3 +8,186 @@ a:hover {
     --secondary-color-2: #0a205a;
     --secondary-color-3: #040c24;
   }
+  
+  .background {
+    background-image: url('space-background.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planet-container {
+    position: relative;
+    width: 80vw;
+    height: 80vw;
+    border-radius: 50%;
+    transform: rotate(0deg);
+}
+
+.planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.planet img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.planet p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.planet:nth-child(1) {
+    transform: rotate(45deg) translate(200px);
+}
+
+.planet:nth-child(2) {
+    transform: rotate(90deg) translate(200px);
+}
+
+.planet:nth-child(3) {
+    transform: rotate(135deg) translate(200px);
+}
+
+.planet:nth-child(4) {
+    transform: rotate(180deg) translate(200px);
+}
+
+.planet:nth-child(5) {
+    transform: rotate(225deg) translate(200px);
+}
+
+.planet:nth-child(6) {
+    transform: rotate(270deg) translate(200px);
+}
+
+.planet:nth-child(7) {
+    transform: rotate(315deg) translate(200px);
+}
+
+.planet:nth-child(8) {
+    transform: rotate(360deg) translate(200px);
+}
+
+.planet:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+body{
+  margin:0;
+  background-image: url("../Game-of-code-CTF/image/home3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.background-container {
+ 
+ 
+}
+
+.material-symbols-outlined {
+  font-size: 1000px; /* Adjust font size if needed */
+}
+
+.settings {
+ 
+  color:var(--primary-color-1);
+  position: absolute;
+  top: 280px; /* Adjust top position */
+  right: 400px; /* Adjust right position */
+}
+.info {
+  color:var(--primary-color-1);
+  position: absolute;
+  top: 370px; /* Adjust top position */
+  left: 250px; /* Adjust left position */
+}
+.rocket {
+  color:var(--primary-color-1);
+  position: absolute;
+  top: 190px; /* Adjust top position */
+  left: 630px; /* Adjust left position */
+}
+
+.settings,
+.rocket,
+.info {
+  transform: scale(5); 
+}
+
+.material-symbols-outlined:hover {
+  color: var(--primary-color-2); 
+  
+}
+
+.settings:hover,
+.rocket:hover,
+.info:hover {
+  transform: translateY(-10px) scale(5); 
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  background-color:var(--primary-color-1);
+  height: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  text-align: center; 
+  font-size: 130px; 
+  position: absolute;
+  top:-40px;
+  left: 50%;
+    transform: translate(-50%, -50%); 
+  
+}
+
+@keyframes color-change {
+  0% { color:var(--primary-color-1) }
+  50% { color: var(--primary-color-2) }
+  100% { color: var(--secondary-color-1) }
+}
+
+h1 {
+  animation: color-change 3s ease-in-out infinite alternate; 
+}
+
+
+.play-text {
+  display: none; /* Hide text initially */
+  position: absolute;
+  padding: 5px 10px; /* Add some padding to the text */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white; /* Text color */
+  font-size: 12px; /* Adjust font size as needed */
+  border-radius: 5px; /* Rounded corners for the text box */
+}
