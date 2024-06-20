@@ -1,6 +1,5 @@
-
-body{
-    margin:0;
+body {
+    margin: 0;
 }
 
 .background-container {
@@ -9,37 +8,37 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
-    margin-top: 0px; 
-  }
-  
+    margin-top: 0px;
+}
+
 
 a {
-    float: left; 
-    position: relative; 
-  }
-  
-  img {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-  }
-  
-  #launch img { 
-    top:350px; 
-    left:770px; 
-  }
-  
-  #setting img { 
-    top: 550px; 
-    left: 400px; 
-  }
-  
-  #help img { 
-    top: 550px;
-    left:1200px; 
-  }
+    float: left;
+    position: relative;
+}
 
-  a:hover{
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#launch img {
+    top: 350px;
+    left: 770px;
+}
+
+#setting img {
+    top: 550px;
+    left: 400px;
+}
+
+#help img {
+    top: 550px;
+    left: 1200px;
+}
+
+a:hover {
     transform: translateY(-5px);
     
   }
