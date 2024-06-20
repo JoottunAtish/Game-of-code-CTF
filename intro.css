@@ -1,10 +1,30 @@
 #intro {
-    color: blue;
-    text-align: center;
-    font-family: "Ubuntu", sans-serif;
-  }
+  /* Text properties */
+  color: navy;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #2949a8;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+#intro:hover {
+  color: white;
+  background-color: #2949a8;
+}
 body{
-    background-image: url("../Game-of-code-CTF/image/introback.jpeg");
+    background-image: url("image/introback.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -22,6 +42,8 @@ body{
    
     line-height: 1.5; 
   }
+
+
   #ques1 {
     font-family: "Ubuntu", sans-serif;
     text-decoration: underline 2px; 
@@ -89,4 +111,64 @@ body{
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: auto;
+  }
+
+  
+  li {
+    list-style: none;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+
+  ul {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul:before {
+    content: "›";
+    font-size: 20px;
+    color: #00698f;
+    margin-right: 20px;
+  }
+
+  li:hover {
+    background-color:  #9da5bd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  li:hover ul:before {
+    color: #004965;
+  }
+
+  #next-page-btn {
+    background-color:#9da5bd;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+  bottom: 20px;
+  right: 20px;
+    
+  }
+  
+  #next-page-btn:hover {
+    background-color: #2949a8;
+  }
+  
+  #next-page-btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
