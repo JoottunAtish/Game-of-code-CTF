@@ -1,69 +1,146 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level Selection</title>
-    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Add some basic styling to make it look nice */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .level-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto; /* Add this line to center the container horizontally */
+    max-width: 800px; /* Add this line to set a maximum width for the container */
+}
+        .level {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #0b0a0a;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 250px; /* Add a fixed width */
+    height: 150px; /* Add a fixed height */
+    display: flex; /* Add this to center the content vertically */
+    flex-direction: column; /* Add this to center the content vertically */
+    justify-content: center; /* Add this to center the content vertically */
+    align-items: center;
+        }
+        .level:hover {
+    background-color: #2b5ec2; /* Change the hover background color to a darker shade of #3a4c7a */
+}
+        .level:active {
+            background-color: #2949a8;
+        }
+        .home-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .home-button:hover {
+            background-color: #444;
+        }
+
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #010000;
+    background-image: url('../image/backgrouddddddd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.level h2,.level p {
+  color: #fff; /* or white */
+}
+    </style>
 </head>
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Orbiting Planets</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="background">
-            <div class="big-circle">
-                <div class="orbit">
-                    <a href="page1.html" class="planet">
-                        <img src="planet1.png" alt="Planet 1">
-                        <p>Planet 1</p>
-                    </a>
-                    <a href="page2.html" class="planet">
-                        <img src="planet2.png" alt="Planet 2">
-                        <p>Planet 2</p>
-                    </a>
-                    <a href="page3.html" class="planet">
-                        <img src="planet3.png" alt="Planet 3">
-                        <p>Planet 3</p>
-                    </a>
-                    <a href="page4.html" class="planet">
-                        <img src="planet4.png" alt="Planet 4">
-                        <p>Planet 4</p>
-                    </a>
-                    <a href="page5.html" class="planet">
-                        <img src="planet5.png" alt="Planet 5">
-                        <p>Planet 5</p>
-                    </a>
-                    <a href="page6.html" class="planet">
-                        <img src="planet6.png" alt="Planet 6">
-                        <p>Planet 6</p>
-                    </a>
-                    <a href="page7.html" class="planet">
-                        <img src="planet7.png" alt="Planet 7">
-                        <p>Planet 7</p>
-                    </a>
-                    <a href="page8.html" class="planet">
-                        <img src="planet8.png" alt="Planet 8">
-                        <p>Planet 8</p>
-                    </a>
-                    <a href="page9.html" class="planet">
-                        <img src="planet9.png" alt="Planet 9">
-                        <p>Planet 9</p>
-                    </a>
-                    <a href="page10.html" class="planet">
-                        <img src="planet10.png" alt="Planet 10">
-                        <p>Planet 10</p>
-                    </a>
-                </div>
-            </div>
+    <!-- Home button -->
+    <button class="home-button" onclick="location.href='previous_page.html'">Home</button>
+
+    <!-- Level selection container -->
+    <div class="level-selection">
+        <!-- Level 1 -->
+        <div class="level" onclick="location.href='level1.html'">
+            <h2>Level 1:  Hello World! </h2>
+            <p>Click to play Level 1</p>
         </div>
-    </body>
-    </html>
-    
+        <!-- Level 2 -->
+        <div class="level" onclick="location.href='level2.html'">
+            <h2>Level 2: Decision Dilemma</h2>
+            <p>Click to play Level 2</p>
+        </div>
+        <!-- Level 3 -->
+        <div class="level" onclick="location.href='level3.html'">
+            <h2>Level 3: Looping Labyrinth</h2>
+            <p>Click to play Level 3</p>
+        </div>
+        <!-- Level 4 -->
+        <div class="level" onclick="location.href='level4.html'">
+            <h2>Level 4: Function Fable</h2>
+            <p>Click to play Level 4</p>
+        </div>
+        <!-- Level 5 -->
+        <div class="level" onclick="location.href='level5.html'">
+            <h2>Level 5: Array Adventure</h2>
+            <p>Click to play Level 5</p>
+        </div>
+        <!-- Level 6 -->
+        <div class="level" onclick="location.href='level6.html'">
+            <h2>Level 6: Search Expedition</h2>
+            <p>Click to play Level 6</p>
+        </div>
+        <!-- Level 7 -->
+        <div class="level" onclick="location.href='level7.html'">
+            <h2>Level 7: Bubble Burst</h2>
+            <p>Click to play Level 7</p>
+        </div>
+        <!-- Level 8 -->
+        <div class="level" onclick="location.href='level8.html'">
+            <h2>Level 8: Algorithm Adept</h2>
+            <p>Click to play Level 8</p>
+        </div>
+        <!-- Level 9 -->
+        <div class="level" onclick="location.href='level9.html'">
+            <h2>Level 9: Code Craftsmanship</h2>
+            <p>Click to play Level 9</p>
+        </div>
+        <!-- Level 10 -->
+        <div class="level" onclick="location.href='level10.html'">
+            <h2>Level 10: Mastery Mission</h2>
+            <p>Click to play Level 10</p>
+        </div>
+    </div>
+
+    <!-- Add some animation to make it look nice -->
+    <script>
+        // Add a fade-in effect to the levels
+        document.addEventListener("DOMContentLoaded", function() {
+            const levels = document.querySelectorAll(".level");
+            levels.forEach((level) => {
+                level.style.opacity = 0;
+                level.style.transform = "scale(0.5)";
+                setTimeout(() => {
+                    level.style.opacity = 1;
+                    level.style.transform = "scale(1)";
+                }, 500);
+            });
+        });
+
+    </script>
 </body>
 </html>
