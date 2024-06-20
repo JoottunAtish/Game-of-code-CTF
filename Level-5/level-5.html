@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level 5</title>
     <link rel="stylesheet" href="/level.css">
+    <script src="/check_ans.js" type="module"></script>
+
 </head>
 
 <body>
@@ -26,9 +28,9 @@
 
 
             <div class="container-button">
-                <button>A user-defined datatype</button>
-                <button>A special variable which can store multiple values of the same datatype</button>
-                <button>A special variable which can store multiple values of the multiple datatype</button>   
+                <button class="bad">A user-defined datatype</button>
+                <button class="good">A special variable which can store multiple values of the same datatype</button>
+                <button class="bad">A special variable which can store multiple values of the multiple datatype</button>   
             </div>
         </div>
 
@@ -44,9 +46,9 @@
 
 
             <div class="container-button">
-                <button>array = [12, 34, 45, 32, 54]</button>
-                <button>array = 12</button>
-                <button>array =1,2,4,66</button>   
+                <button class="good">array = [12, 34, 45, 32, 54]</button>
+                <button class="bad">array = 12</button>
+                <button class="bad">array =1,2,4,66</button>   
             </div>
         </div>
 
@@ -68,10 +70,10 @@
                     </p>
                 </div>
                 <div class="container-button">
-                    <button>fruits1</button>
-                    <button>fruits[0]</button>
-                    <button>fruits0</button>
-                    <button>fruits[1]</button>
+                    <button class="bad">fruits1</button>
+                    <button class="good">fruits[0]</button>
+                    <button class="bad">fruits0</button>
+                    <button class="bad">fruits[1]</button>
                 </div>
             </div>
         </div>
