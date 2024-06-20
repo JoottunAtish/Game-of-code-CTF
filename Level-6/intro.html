@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bubble burst</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h3>Bubble Sort Explained for Kids!</h3>
+<p>
+Imagine you have a bunch of numbered toys, and you want to arrange them 
+in order from the smallest to the biggest number. Bubble sort is like a game 
+where you compare pairs of toys and swap them if they are in the wrong order. 
+You keep playing this game until all the toys are in the correct order!
+</p>
+<h3>Bubble Sort Code in Python</h3>
+
+<pre>
+    <code>
+        Pseudocode for Bubble Sort:
+
+      
+    </code>
+</pre>
+
+    <pre>
+        <code>
+            def bubble_sort(toys):
+                n = len(toys)
+                toys_array = array.array('i', toys)  # 'i' indicates integer type array
+                for i in range(n):
+                    for j in range(0, n-i-1):
+                        if toys_array[j] > toys_array[j+1]:
+                            temp=toys_array[j]
+                            toys_array[j] = toys_array[j+1]
+                            toys_array[j+1]= temp
+                return list(toys_array)
+            
+            # Example usage
+            toys = [4, 2, 7, 1, 3]
+            sorted_toys = bubble_sort(toys)
+            print(sorted_toys)
+            
+        </code>
+        </pre>
+
+</body>
+
+</html>
