@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Iteration/Looping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Search  Expedition</h1>
+
+    <p>
+        Lets learn about an algorithm called Linear Search. Linear search is a searching algorithm
+        that search for a specific value given a list or an array. It is like someone search for something 
+        in their house. they go to specific location.
+    </p>
+
+    <h3>How does the algorithm work?</h3>
+    <p>
+        lets say that we have a list ["keys", "wallet", "phone", "pen", "handkerchief"]. Each element in the list or array 
+        has an index. eg, at index 0, we have "keys". 
+    </p>
+
+    <p>
+        lets search for phone. <br>
+        lets key a count of the index. lets start at the first index, 0. At index 0, is keys. Is keys a phone? NO! 
+        We increment the Index. Index = 1. <br>
+        At index 1. is wallet. Is wallet a phone? NO! Again increment Index = 2. <br>
+        At index 2, is phone. Is phone a phone? YES! WE found it. the we display that phone was found at index 2.
+    </p>
+
+    <h3>Here is the code in Psuedocode and Python</h3>
+    <pre>
+        <code>
+
+
+            # Psuedocode
+            list = ["keys", "wallet", "phone", "pen", "handkerchief"]
+            FUNCTION LinearSearch(list:ARRAY, SearchItem: STRING) RETURNS INTEGER
+            DECLARE index = 0
+                WHILE (index <= LENGTH(list))
+                    IF list[index] == SearchItem THEN
+                        OUTPUT "The search item is at: " index
+                        RETURN index
+                    ELSE
+                        index = index + 1
+                    ENDIF
+                RETURN -1 // Return -1 if value is not found.
+        </code>
+    </pre>
+
+</html>
