@@ -1,0 +1,45 @@
+body{
+    margin:0;
+}
+
+.background-container {
+    background-image: url("../image/home3.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: 0px; 
+  }
+  
+
+a {
+    float: left; 
+    position: relative; 
+  }
+  
+  img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+  }
+  
+  #launch img { 
+    top:350px; 
+    left:770px; 
+  }
+  
+  #setting img { 
+    top: 550px; 
+    left: 400px; 
+  }
+  
+  #help img { 
+    top: 550px;
+    left:1200px; 
+  }
+
+  a:hover{
+    transform: translateY(-5px);
+    
+  }
+  
