@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level 3</title>
+    <link rel="stylesheet" href="/level.css">
 </head>
 
 <body>
@@ -24,9 +25,9 @@
             </div>
 
             <div class="container-button">
-                <button>For Loop</button>
-                <button>While Loop</button>
-                <button>Do-While</button>
+                <button>for loop</button>
+                <button>while loop</button>
+                <button>do-while</button>
             </div>
         </div>
 
@@ -82,7 +83,22 @@ while (True):
 
     </div>
 
-
+    <button class="next-btn">Next</button>
 </body>
 
+<script>
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const question = e.target.closest('.container');
+            if (question.classList.contains('container-1')) {
+                if (e.target.textContent.toLowerCase() === 'for loop') {
+                    alert('Very Good!');
+                } else {
+                    alert('Error...try Again!');
+                }
+            }
+        })
+    })
+ </script>
 </html>
