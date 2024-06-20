@@ -5,108 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level 1 Hello World!</title>
-    <style>
-           /* Global Styles */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #fff;
-  background-image: linear-gradient(to bottom, #212121, #343434);
-  background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 36px;
-  color: #66CCCC;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
-
-/* Container Styles */
-
-.container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-
-.container-1 {
-  margin-top: 0;
-}
-
-/* Question Styles */
-
-.qu {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-}
-
-.Blank {
-  font-weight: bold;
-  color: #66CCCC;
-}
-
-/* Button Styles */
-
-.container-button {
-  margin-top: 20px;
-  text-align: center;
-}
-
-button {
-  background-color: #66CCCC;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 0 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-button:hover {
-  background-color: #44AAAA;
-}
-
-button:active {
-  background-color: #44AAAA;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-}
-
-/* Galaxy Effect */
-
-.galaxy {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-image: url('https://images.unsplash.com/photo-1536440136624-812e04f55ef4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5;
-  z-index: -1;
-}
-    </style>
-</head>
+    <link rel="stylesheet" href="/level.css">
 <body>
     <div class="galaxy"></div>
     <h1>Level 1: Output and Datatype</h1>
@@ -118,10 +17,10 @@ button:active {
             <p>("Hello, world")</p>
         </div>
         <div class="container-button">
-            <button id="btn1" data-answer="print">OUTPUT</button>
-            <button id="btn2">Printing</button>
-            <button id="btn3">print</button>
-            <button id="btn4">display</button>
+            <button class="good" id="btn1" data-answer="print">OUTPUT</button>
+            <button class="bad" id="btn2">Printing</button>
+            <button class="bad" id="btn3">print</button>
+            <button class="bad" id="btn4">display</button>
         </div>
     </div>
 
@@ -133,15 +32,15 @@ button:active {
                 <p>________</p>
             </div>
             <div class="container-button">
-                <button id="btn5">Integer</button>
-                <button id="btn6" data-answer="string">String</button>
-                <button id="btn7">Float</button>
-                <button id="btn8">Boolean</button>
+                <button class="bad" id="btn5">Integer</button>
+                <button class="good" id="btn6" data-answer="string">String</button>
+                <button class="bad" id="btn7">Float</button>
+                <button class="bad" id="btn8">Boolean</button>
             </div>
         </div>
     </div>
     <button class="next-btn">Next</button>
-    <script>
+    <!-- <script>
         const buttons = document.querySelectorAll('button');
         buttons.forEach(button => {
             button.addEventListener('click', (e) => {
@@ -162,6 +61,6 @@ button:active {
                 }
             });
         });
-    </script>
+    </script> -->
 </body>
 </html>

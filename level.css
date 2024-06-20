@@ -101,3 +101,16 @@ button:active {
   opacity: 0.5;
   z-index: -1;
 }
+
+
+.opt {
+    display: flex;
+    align-items: center;
+}
+button{
+    margin: 1rem;
+}
+
+.opt > button{
+    margin: 0.5rem;
+}
