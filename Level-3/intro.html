@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Iteration/Looping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Iteration and Looping</h1>
+    <p>Iteration statements are like your friendly guide that helps you repeat tasks.</p>
+    <p>Loops are like magical spells that can make things happen repeatedly based on certain conditions. They help us perform tasks multiple times, just like when you keep turning objects into apples or bananas with your magic wand. So, loops are super important because they help us automate tasks and do cool things over and over!</p>
+    <p>Have you ever needed to do something repeatedly? Let's explore the power of loops:</p>
+    <p>Imagine you have a magic wand that can transform items into apples or bananas repeatedly!</p>
+    <p>If I feel a little happy, I will eat apples. But if I am very, very happy, then I will eat bananas.</p>
+    <p>Pseudocode for the task above using loops:</p>
+    <pre>
+        FOR i = 1 to 5:
+            IF (happy) THEN:
+                OUTPUT "Apples"
+            ELSE IF (extremely happy) THEN:
+                OUTPUT "bananas"
+            ENDIF
+    </pre>
+    <p>In Python code with loops, we would write:</p>
+    <pre>
+        <code>
+            print("How are you feeling right now?\n")
+            print("Choose: 1. a little happy 2. very, very happy\n")
+            mood = input()
+            for i in range(5):
+                if mood == 'a little happy':
+                    print("Let's have yummy apples!")
+                elif mood == 'very, very happy':
+                    print("Yay! It's time for delicious bananas!")
+                else:
+                    print("Hmm... I'm not sure what to do with that feeling!")
+        </code>
+    </pre>
+    <h2>Looping Structures</h2>
+    <p>There are different types of loops like the FOR loop, WHILE loop, and DO-WHILE loop that help us repeat tasks efficiently.</p>
+</body>
+</html>
