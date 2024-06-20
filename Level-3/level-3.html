@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level 3</title>
     <link rel="stylesheet" href="/level.css">
+    <script src="/check_ans.js" type="module"></script>
+
 </head>
 
 <body>
@@ -50,7 +52,7 @@
                     </p>
                 </div>
                 <div class="container-button">
-                    <button>
+                    <button class="bad">
                         <pre>
 <code>
 for i in range(3):
@@ -59,7 +61,7 @@ for i in range(3):
 </pre>
                     </button>
 
-                    <button>
+                    <button class="good">
                         <pre>
 <code>
     FOR i <-- 1 TO 5 THEN 
@@ -69,7 +71,7 @@ for i in range(3):
 </pre>
                     </button>
 
-                    <button>
+                    <button class="bad">
                         <pre>
 <code>
 while (True):
@@ -86,7 +88,7 @@ while (True):
     <button class="next-btn">Next</button>
 </body>
 
-<script>
+<!-- <script>
     const buttons = document.querySelectorAll('button');
     buttons.forEach(button => {
         button.addEventListener('click', (e) => {
@@ -100,5 +102,5 @@ while (True):
             }
         })
     })
- </script>
+ </script> -->
 </html>
